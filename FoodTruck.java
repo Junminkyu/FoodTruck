@@ -1,8 +1,13 @@
 import java.util.Scanner;
 
 public class FoodTruck {
-    public String hamburger(){
-        
+    String name;
+    public FoodTruck(String x){
+        this.name=x ;
+    }
+
+    public void name(){
+        System.out.println("Welcome to "+name+"!");
     }
     
 }
