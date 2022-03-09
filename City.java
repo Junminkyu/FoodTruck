@@ -3,5 +3,6 @@ public class City{
         FoodTruck japan= new FoodTruck("Japanese Restaurant");
 
         japan.name();
+        japan.menu();
     }
 }
