@@ -4,7 +4,7 @@ public class Menu {
     public static void main(String[] args){}
 
         ArrayList<String> full=new ArrayList<String>();
-        MainIntroduction main=new MainIntroduction();
+        
 
     public void nigiri(){
         String[] nigiri={"Tamago","Maguro","Ika","Ebi","Tako","Sake","Smoked Sake","Hotate","Saba","Amaebi","Toro","Hamachi","Unagi","Uni"};
@@ -25,17 +25,20 @@ public class Menu {
                 System.out.println(nigiri[i]+" was chosen!");
                 System.out.println("How many do you want to try?");
                 int z=scan.nextInt();
-                for(int j=0;j<z;j++){
+                int time=0;
+                while(time<z){
                     full.add(nigiri[i]);
+                    time++;
                 }
-                /*System.out.println("Do you want to choose another nigiri?");
+                
+                System.out.println("Do you want to choose another nigiri?");
                 String x=scan.nextLine();
                 if(x.toLowerCase().equals("yes")){
                     nigiri();
                 }
                 else{
                     System.out.println("");
-                }*/
+                }
             }
             if(y.toLowerCase()!=nigiri[i].toLowerCase()&&i==nigiri.length){
                 System.out.println("The dish you typed is not in our menu");
