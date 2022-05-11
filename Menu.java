@@ -33,6 +33,7 @@ public class Menu {
                 
                 System.out.println("Do you want to choose another nigiri?");
                 String x=scan.nextLine();
+                
                 if(x.toLowerCase().equals("yes")){
                     nigiri();
                 }
