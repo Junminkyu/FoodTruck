@@ -12,6 +12,15 @@ public class Menu {
         System.out.println(" Unagi(eel)         Uni(sea urchin)");
     }
 
+    public void roll(){
+        System.out.println("   -Roll (6pc)-  ");
+        System.out.println(" Snow Mt Roll      Sexy Girl Roll");
+        System.out.println(" Rainbow Roll      Spicy Tuna Roll");
+        System.out.println(" Boston Roll       Salmon Roll");
+        System.out.println(" B.C. Roll         California Roll");
+        System.out.println(" Dynamite Roll     Escolar Roll");
+    }
+
     
     
 }
