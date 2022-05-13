@@ -7,13 +7,13 @@ public class FoodTruck {
     public FoodTruck(String x){
         this.name=x ;
     }
-    public void welcome(){
-    }
+
     public void name(){
-        System.out.println("Welcome to "+name+"!");
-        System.out.println("What would you like to order?");
+        System.out.println("Welcome to Japanese Restaurant! What would you like to order?");
     }
     public void menu(){
-     mn.nigiri();
+        Scanner scan=new Scanner(System.in);
+        System.out.println("What menu do you want to see? Options: Nigiri, ")
+        mn.nigiri();
     }
 }
