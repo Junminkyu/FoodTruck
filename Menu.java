@@ -42,10 +42,6 @@ public class Menu {
                     System.out.println("");
                 }
             }
-            /*if(y.toLowerCase()!=nigiri[nigiri.length].toLowerCase()&&i==nigiri.length){
-                System.out.println("The dish you typed is not in our menu");
-                nigiri();
-            }*/
         }
         return full;
     }
