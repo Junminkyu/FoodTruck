@@ -6,7 +6,7 @@ public class Menu {
         ArrayList<String> full=new ArrayList<String>();
         
 
-    public void nigiri(){
+    public ArrayList<String> nigiri(){
 
         String[] nigiri={"Tamago","Maguro","Ika","Ebi","Tako","Sake","Smoked Sake","Hotate","Saba","Amaebi","Toro","Hamachi","Unagi","Uni"};
         Scanner scan=new Scanner(System.in);
@@ -33,20 +33,21 @@ public class Menu {
                 }
                 
                 System.out.println("Do you want to choose another nigiri?");
-                String x=scan.nextLine();
+                String o=scan.nextLine();
                 
-                if(x.toLowerCase().equals("yes")){
+                if(o.toLowerCase().equals("yes")){
                     nigiri();
                 }
                 else{
                     System.out.println("");
                 }
             }
-            if(y.toLowerCase()!=nigiri[i].toLowerCase()&&i==nigiri.length){
+            if(y.toLowerCase()!=nigiri[nigiri.length].toLowerCase()&&i==nigiri.length){
                 System.out.println("The dish you typed is not in our menu");
                 nigiri();
             }
         }
+        return full;
     }
 
     public void roll(){

@@ -17,3 +17,4 @@ public class FoodTruck {
         String y=scan.nextLine();
         System.out.println("What would you like to order?");
     }   
+}
