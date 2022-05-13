@@ -5,6 +5,34 @@ public class Menu {
 
         ArrayList<String> full=new ArrayList<String>();
         
+    public void menu(){
+        Scanner scan=new Scanner(System.in);
+        System.out.println("There are some catergories in our restaurant!");
+        System.out.println("Nigiri    Roll    Noodle     Tenpura     Rice ");
+        System.out.println("What would you like to choose?");
+        String y=scan.nextLine();
+    
+        if(y.toLowerCase().equals("nigiri")){
+            nigiri();
+        }
+        else if(y.toLowerCase().equals("roll")){
+            roll();
+        }
+        else if(y.toLowerCase().equals("noodle")){
+            noodle();
+        }
+        else if(y.toLowerCase().equals("tenpura")){
+            tenpura();
+        }
+        else if(y.toLowerCase().equals("rice")){
+            rice();
+        }
+        else{
+            System.out.println("Sorry, but we can not recognize the menu. Could you try one more time?");
+            System.out.println(" ");
+            menu();
+            }
+        }
 
     public ArrayList<String> nigiri(){
         String[] nigiri={"Tamago","Maguro","Ika","Ebi","Tako","Sake","Smoked Sake","Hotate","Saba","Amaebi","Toro","Hamachi","Unagi","Uni"};
@@ -40,13 +68,21 @@ public class Menu {
                     nigiri();
                 }
                 else{
-                    System.out.println("");
+                    System.out.println("Do you want to look at other menus?");
+                    String u=scan.nextLine();
+                    if(u.toLowerCase().equals("yes")){
+                        menu();
+                    }
+                    else{
+                        for(String x:full){
+                            System.out.print(x+" ");
+                        }
+                    }
                 }
             }
         }
         return full;
     }
-
     public ArrayList<String> roll(){
         String[] roll={"Snow Mt Roll","Sexy Girl Roll","Rainbow Roll","Spicy Tuna Roll","Boston Roll","Salmon Roll","B.C. Roll","California Roll","Dynamite Roll","Escolar Roll"};
         Scanner scan=new Scanner(System.in);
@@ -78,10 +114,14 @@ public class Menu {
                     roll();
                 }
                 else{
-                    System.out.println("");
+                    System.out.println("Do you want to look at other menus?");
+                    String u=scan.nextLine();
+                    if(u.toLowerCase().equals("yes")){
+                        menu();
                 }
             }
         }
+    }
         return full;
     }
 
@@ -116,10 +156,14 @@ public class Menu {
                     noodle();
                 }
                 else{
-                    System.out.println("");
+                    System.out.println("Do you want to look at other menus?");
+                    String u=scan.nextLine();
+                    if(u.toLowerCase().equals("yes")){
+                    menu();
                 }
             }
         }
+    }
         return full;
     }
 
@@ -152,10 +196,9 @@ public class Menu {
                 }
                 else{
                     System.out.println("Do you want to look at other menus?");
-                    scan.nextLine();
                     String u=scan.nextLine();
                     if(u.toLowerCase().equals("yes")){
-                        intro.menu();
+                        menu();
                     }
                 }
             }
@@ -190,10 +233,14 @@ public class Menu {
                     roll();
                 }
                 else{
-                    System.out.println("");
+                    System.out.println("Do you want to look at other menus?");
+                    String u=scan.nextLine();
+                    if(u.toLowerCase().equals("yes")){
+                        menu();
                 }
             }
         }
+    }
         return full;
     }
 
@@ -223,10 +270,16 @@ public class Menu {
                     roll();
                 }
                 else{
-                    System.out.println("");
+                    System.out.println("Do you want to look at other menus?");
+                    scan.nextLine();
+                    String u=scan.nextLine();
+                    if(u.toLowerCase().equals("yes")){
+                        menu();
+                    
                 }
             }
         }
+    }
         return full;
     }
 

@@ -1,8 +1,12 @@
+import java.util.*;
+
 public class City{
     public static void main(String[] args){
         FoodTruck japan= new FoodTruck("Japanese Restaurant");
-        MainIntroduction intro=new MainIntroduction();
+        Menu menu=new Menu();
         japan.info();
-        intro.menu();
+        menu.menu();
+        japan.verify();
+        
     }
 }
